@@ -2,7 +2,23 @@ const fs = require('fs');
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(licenses) {
+
+  let licenseContent = '  '
+
+  licenses.forEach(license => {
+    if(license === 'mit') {
+      licenseContent+= `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  `;
+    }
+    
+    if(license === 'ISC') {
+      licenseContent += `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)  `
+    }
+  });
+
+  return licenseContent;
+  
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -16,6 +32,10 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   let content = `# ${data.name}`;
 
+
+  const generatedLicenseBadges = renderLicenseBadge(data.license);
+
+  content += generatedLicenseBadges;
 
   writeToFile('./dist/README.md', content);
 

@@ -71,9 +71,10 @@ const promtUser = () => {
     default: true
 },
 {
-    type: 'input',
+    type: 'checkbox',
     name: 'license',
-    message: 'Please provide a License (Required)',
+    message: 'Please select a License (Required)',
+    choices: ['mit', 'ISC', 'Microsoft Public License'],
     validate: nameInput => {
         if(nameInput) {
             return true
@@ -108,9 +109,9 @@ const promtUser = () => {
 // TODO: Create a function to initialize app
 function init() { 
    promtUser().then( (userAnswers) => {
-        //console.log(userAnswers)
+        console.log(userAnswers)
 
-         generateMarkdown(userAnswers)
+        generateMarkdown(userAnswers)
     })
  
     
