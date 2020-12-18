@@ -74,7 +74,7 @@ const promtUser = () => {
     type: 'checkbox',
     name: 'license',
     message: 'Please select a License (Required)',
-    choices: ['mit', 'ISC', 'Microsoft Public License'],
+    choices: ['mit', 'ISC', 'Open Database License'],
     validate: nameInput => {
         if(nameInput) {
             return true
@@ -100,7 +100,17 @@ const promtUser = () => {
     name: 'confirmTest',
     message: 'Would you like to include a Test section? (ie.. List of collabortors..etc) ',
     default: true
-}
+},
+{
+    type: 'input',
+    name: 'username',
+    message: 'Please enter your github username'
+},
+{
+    type: 'input',
+    name: 'email',
+    message: 'Please enter your email address'
+},
 ])
 }
 
