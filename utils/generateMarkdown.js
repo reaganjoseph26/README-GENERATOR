@@ -73,7 +73,7 @@ function generateMarkdown(data) {
   ${data.Credits}
 
   ## License
-  ${renderLicenseLink(data.license)}
+  This licence is covered undered ${renderLicenseLink(data.license)}.
   
 
   ## Contributing 
@@ -84,8 +84,8 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any additional questions, please reach out to me. 
-  My GitHub profile is [${data.githubUsername}](https://github.com/${data.githubUsername})
-  My email address is ${data.email}
+  You can reachout to me at my GitHub profile, which is [${data.githubUsername}](https://github.com/${data.githubUsername}).
+  Also, you can reach out to me by email. My email address is ${data.email}. 
   `;
 
   writeToFile('./dist/README.md', content);
