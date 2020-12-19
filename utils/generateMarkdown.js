@@ -2,25 +2,19 @@ const fs = require('fs');
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(licenses) {
- 
-  let licenseContent = '  '
+function renderLicenseBadge(license) {
 
-  licenses.forEach(license => {
+  let licenseContent 
+  
     if(license === 'mit') {
-      licenseContent += `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  `;
+      licenseContent = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()`;
     } 
-   
-    if(license === 'ISC') {
-      licenseContent += `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)  `
+    else if(license === 'ISC') {
+      licenseContent = `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]`
     } 
-   
- 
-
-    if(license === 'Open Database License') {
-      licenseContent += `[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)]`
+    else {
+      licenseContent = `[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)]`
     }
-  });
 
   return licenseContent;
   
@@ -28,7 +22,21 @@ function renderLicenseBadge(licenses) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let licenseLink 
+
+    if(license === 'mit') {
+      licenseLink = `(https://opensource.org/licenses/MIT)`
+    } 
+    else if (license === 'ISC') {
+      licenseLink =  `(https://opensource.org/licenses/ISC)`
+    }
+    else {
+      licenseLink = `(https://opendatacommons.org/licenses/odbl/)`
+    }
+
+    return licenseLink
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -36,17 +44,48 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  let content = `# ${data.name}
+ 
+  let content = `
+  ${renderLicenseBadge(data.license)}
+
+  # ${data.name} 
+
   ## Description
-  - ${data.about}
+  ${data.about}
+
   ## Table of Contents
-   * ${data.confirmContentsSection}
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
+  * [Contributing](#Contributing)
+  * [Test](#test)
+  
+
+  ## Installation
+  ${data.Installation}
+
+  ## Usage
+  ${data.Usage}
+
+  ##Credits
+  ${data.Credits}
+
+  ## License
+  ${renderLicenseLink(data.license)}
+  
+
+  ## Contributing 
+  ${data.Contribute}
+
+  ## Test
+  ${data.Test}
+
+  ## Questions
+  If you have any additional questions, please reach out to me. 
+  My GitHub profile is [${data.githubUsername}](https://github.com/${data.githubUsername})
+  My email address is ${data.email}
   `;
-
-  `## License`
-  const generatedLicenseBadges = renderLicenseBadge(data.license);
-
-  content += generatedLicenseBadges;
 
   writeToFile('./dist/README.md', content);
 
