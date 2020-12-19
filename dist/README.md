@@ -1,10 +1,10 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
 
-  # test 
+  # Movie Hunt 
 
   ## Description
-  test
+  A web app for dedicated movie lovers
 
   ## Table of Contents
   * [Installation](#installation)
@@ -13,29 +13,30 @@
   * [License](#license)
   * [Contributing](#Contributing)
   * [Test](#test)
+  * [Questions](#questions)
   
 
   ## Installation
-  test
+  I like pizza
 
   ## Usage
-  test
+  Screenshot here
 
-  ##Credits
-  test
+  ## Credits
+  youtube.com
 
   ## License
   (https://opensource.org/licenses/MIT)
   
 
   ## Contributing 
-  test
+  Contribute here
 
   ## Test
-  test
+  Test run
 
   ## Questions
   If you have any additional questions, please reach out to me. 
   My GitHub profile is [reaganjoseph26](https://github.com/reaganjoseph26)
-  My email address is reaganjoseph26@yahoo.com
+  My email address is test.com
   

@@ -60,6 +60,7 @@ function generateMarkdown(data) {
   * [License](#license)
   * [Contributing](#Contributing)
   * [Test](#test)
+  * [Questions](#questions)
   
 
   ## Installation
@@ -68,7 +69,7 @@ function generateMarkdown(data) {
   ## Usage
   ${data.Usage}
 
-  ##Credits
+  ## Credits
   ${data.Credits}
 
   ## License

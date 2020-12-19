@@ -43,7 +43,7 @@ const promtUser = () => {
                 type: 'checkbox',
                 name: 'Sections',
                 message: 'Select the sections you will like to include in your Table of Contents',
-                choices: ['Installation', 'Usage', 'Credits', 'License', 'Badges', 'Test']
+                choices: ['Installation', 'Usage', 'Credits', 'License', 'Contribute', 'Test', 'Questions']
             },
             {
                 type: 'input',
