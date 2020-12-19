@@ -1,10 +1,10 @@
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
+  [![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)]
 
-  # readme-generator 
+  # readme-example 
 
   ## Description
-  A command line application to generate a high quality readme.
+  A sample readme file for demostration. 
 
   ## Table of Contents
   * [Installation](#installation)
@@ -17,35 +17,23 @@
   
 
   ## Installation
-  1. Create a folder on your local pc and clone this repo down. 
-  2. If you do not have node.js install, please install the lastest version. 
-  3. run the command npm install. 
-  4. Run the command node index.js. 
-  5. Answer the prompts selecting the sections you want to add to your readme. 
-  6. Go back to your terminal and open up the readme in a preview section. There you have it, You generated youre readme.md from the command line using node.js.
+  Downalod node.js and run the command npm install. 
 
   ## Usage
-  Usage in your READme.md would include examples for use any screen shots. To include a screenshot in your READme you would follow the syntax of: ![ScreenShot](relative file path here)
-  </br>
-  ![ScreenShot](../dist/images/terminalexample.jpg)
-
+  Examples of use would include writing a quick readme file to focus more on coding. 
 
   ## Credits
-  List of collbaorators, third party assets, and/or any tutorials you followed.  
-  Currently no credits are applicable for this project. 
+  N/A
 
   ## License
-  Licenses let other developers know what they can and cannot do with your project. 
-  For exmaple: This licence is covered undered (https://opensource.org/licenses/MIT).
-  This project, Readme-generator, currently does not have a license. The MIT badge showing up at the top is also an example of adding a badge to your readme.
+  This licence is covered undered (https://opendatacommons.org/licenses/odbl/).
   
 
   ## Contributing 
   N/A
 
   ## Test
-  A test sections provides tests for your application with instrcutions on how to run them.
-  Currently no test are available for this project. 
+  No test available. 
 
   ## Questions
   If you have any additional questions, please reach out to me. 
