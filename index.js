@@ -158,6 +158,7 @@ const promtUser = () => {
 // TODO: Create a function to initialize app
 function init() {
     promtUser().then((userAnswers) => {
+        //This console is important to have to let the user know what their answer object looks like for a review. 
         console.log(userAnswers)
 
         generateMarkdown(userAnswers)
