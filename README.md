@@ -21,13 +21,15 @@
   3. run the command npm install. 
   4. Run the command node index.js. 
   5. Answer the prompts selecting the sections you want to add to your readme. 
-  6. Go back to your terminal and open up the readme in a preview section. There you have it, You generated youre readme.md from the command line using node.js.
+  6. Go back to your terminal and open up the readme in a preview section. There you have it, You generated youre readme file from the command line using node.js.
 
   ## Usage
-  Usage in your READme.md would include examples for use any screen shots. To include a screenshot in your READme you would follow the syntax of: ![ScreenShot](relative file path here)
+  Usage in your READme would include examples for use any screen shots. To include a screenshot in your READme you would follow the syntax of: ![ScreenShot](relative file path here)
   </br>
   This is a ideally what your terminal should look like when ran successfully. 
   ![ScreenShot](./dist/images/terminalexample.jpg)
+  </br>
+  A walkthrough link depicting the process: https://www.youtube.com/watch?v=H2rqVItqEDU&feature=youtu.be
 
 
   ## Credits
